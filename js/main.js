@@ -49,5 +49,8 @@ function calculateSum() {
       
       // Display the result
       document.getElementById('result').innerText = "Sum: " + sum;
+
+
+      
   }
 }
