@@ -159,49 +159,4 @@ switch(seen){
     console.log("not selected");
   }
 
-  // user input mounth name ------> January, Februry,....
-  // alert ------> duruthu,nawam,.......
-
-//  var month = "January";
-
-// switch (month) {
-  // case "January":
-    // alert("Duruthu");
-    // break;
-  // case "February":
-    // alert("Nawam");
-    // break;
-  // default:
-    // alert("Invalid input");
-// }
-
-var val3 = 89;
-
-// val3+=5;
-
-val3++;
-
-// var val3 = val3+5;
-
-console.log(val3);
-
-// loops---------> for loop, while loop, do-while loop
-
-for(var i=0; i<5; i++){
-  console.log("Hello for loop");
-}
-
-
-var myval = 4;
-
-for(var i=0; i<6; i++){
   
-
-  if(myval%2==0){
-    myval+=3
-  }else{
-    myval+=2
-  }
-}
-
-console.log(myval);
