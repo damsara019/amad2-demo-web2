@@ -159,4 +159,19 @@ switch(seen){
     console.log("not selected");
   }
 
+  var myval = 4;
+
+  for (var i = 0; i < 6; i++) {
+    if (myval % 2 == 0) {
+      myval += 3;
+    } else {
+      myval += 2;
+    }
+  }
   
+  console.log(myval);
+
+  ////////////////////////////////////////
+
+  var 
+
