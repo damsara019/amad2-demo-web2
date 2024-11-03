@@ -132,16 +132,46 @@ if(age>18 && age==10){
 var dbusername = "dilshandamsara@gmail.com";
 var dbpassword = "abcd1234";
 
+var dbusername = "dilshandamsara@gmail.com";
+var dbpassword = "abcd1234";
+var attemptCount = 0;
+var maxAttempts = 3;
+
 function checkLogin() {
   var enteredUsername = document.getElementById("email").value;
   var enteredPassword = document.getElementById("password").value;
 
-  if (enteredUsername === dbusername && enteredPassword === dbpassword) {
-    alert("Welcome");
-  } else {
-    alert("Username or password incorrect");
+  // Check if account is already locked
+  if (attemptCount >= maxAttempts) {
+    alert("Your account is locked");
+    return;
   }
+
+  // Check if entered credentials are correct
+  if (enteredUsername === dbusername && enteredPassword === dbpassword) {
+    alert("Login successful");
+    // Reset attempt count after a successful login (optional)
+    attemptCount = 0;
+  } else {
+    attemptCount++; // Increment attempt count
+    alert("Username or password incorrect. Please try again.");
+    
+    // Clear the input fields
+    document.getElementById("email").value = "";
+    document.getElementById("password").value = "";
+
+    // Check if max attempts reached
+    if (attemptCount >= maxAttempts) {
+      alert("Your account is locked");
+    }
+  }
+
+  // Clear the input fields
+  document.getElementById("email").value = "";
+  document.getElementById("password").value = "";
 }
+
+
 
 var seen = 5;
 
@@ -173,5 +203,5 @@ switch(seen){
 
   ////////////////////////////////////////
 
-  var 
+
 
