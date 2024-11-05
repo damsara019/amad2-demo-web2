@@ -203,5 +203,61 @@ switch(seen){
 
   ////////////////////////////////////////
 
+// while loop
+
+// true,false,statement
+
+let count = 0;
+
+while (count < 5) {
+    console.log("Count is: " + count);
+    count++;
+}
+
+// array
+
+var studentMark = [34.5,87,65,48] // index start with zero
+
+console.log(studentMark[0]);
+
+//////////////////////////////
 
 
+var studentMark = [34.5, 87, 65, 48];
+
+var maxMark = studentMark[0];
+var minMark = studentMark[0];
+
+for (var i = 0; i < studentMark.length; i++) {
+    if (studentMark[i] > maxMark) {
+        maxMark = studentMark[i];
+    }
+    if (studentMark[i] < minMark) {
+        minMark = studentMark[i];
+    }
+}
+
+console.log("Maximum mark: " + maxMark);
+console.log("Minimum mark: " + minMark);
+
+// Separate digits in the maximum number
+var maxMarkDigits = String(maxMark).split('');
+console.log("Digits in maximum mark: " + maxMarkDigits);
+
+// get users name from user
+// display charctor o that name like [D,A,M,S,A,R,A]
+
+// // Hardcoded name for testing in Node.js
+// var userName = "Damsara";  // Replace with any name you'd like to test
+
+// // Convert name to uppercase, split it into individual characters, and display as an array
+// var nameCharacters = userName.toUpperCase().split('');
+// console.log("Characters in your name: [" + nameCharacters.join(', ') + "]");
+
+// do while loop
+
+// var balance = 80;
+
+// do{
+//   console.log("Runing.....");
+// }while(balance>=50);
