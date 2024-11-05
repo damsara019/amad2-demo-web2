@@ -261,3 +261,5 @@ console.log("Digits in maximum mark: " + maxMarkDigits);
 // do{
 //   console.log("Runing.....");
 // }while(balance>=50);
+
+
